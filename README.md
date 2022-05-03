@@ -14,12 +14,12 @@ Notes on Jinja:
 variable string: {{ }}
 comment: {# #}
 
-For loop:
-	<ul id="navigation">
-	{% for item in navigation %}
-		<li><a href="{{ item.href }}">{{ item.caption }}</a></li>
-	{% endfor %}
-	</ul>
+For loop ex:
+<ul id="navigation">
+{% for item in navigation %}
+	<li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+{% endfor %}
+</ul>
 
 Access attributes of variable by either of two ways:
 {{ foo.bar }}
@@ -44,13 +44,13 @@ To map your variables either set by queries or enviroment variables, use the <i>
 ![](misc/base_template.png)
 
 
-You can also add in your own custom graphs for example from Plotly, or webmaps for example Leaflet or making an API call to and ESRI portal. 
+You can also add in your own custom graphs for example from Plotly, or webmaps for example Leaflet or making an API call to an ESRI portal. 
 
 ![](misc/sample_notebook.png)
 
 
 
-And final PDF will look like as so, you can also import your own custom bootstrap css and javascript to achieve almost any customizable presentation. 
+And the final PDF will look like as so. You can also import your own custom css and javascript to achieve almost any customizable presentation. 
 
 ![](misc/PDF_example.png)
 

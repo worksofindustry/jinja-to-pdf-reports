@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1 align="right"  style="color: #000057;">Results Report</h1>
+<hr color="#d4d4d4" size="4" width="99%" >
+<img src="plot.png" align="right" width="352" height="264">
+    <div class="container">
+        <h4><b>Pipe Segment Reference:</b> <u>{{ pipe_segment | safe }}</u></h4>
+        <h4><b>Survey Date:</b> <u>{{ date_video_collected }}</u></h4>
+        <h4><b>Operator:</b> <u>{{ operator | safe }}</u></h4>
+        <h4><b>Address:</b> <u>{{ address | safe }}</u></h4>
+        <h4><b>Video Upload:</b> <u>{{ file_name | safe }}</u></h4>
+        <h4><b>Date Video Collected:</b> <u>{{ date_video_collected }}</u></h4>
+        <h4><b>Model Type:</b> <u>{{ model_type }}</u></h4>
+    </div>
+    <hr color="#d4d4d4" size="4" width="99%" >
+    <h2><b>Insights</b></h2>
+     {{ insights }}
+<br>
+<br>
+<br>
+<br>    
+<footer>
+  <p><b>Fake Company, All rights reserved.</b></p>
+</footer>
+</body>
+</html>
